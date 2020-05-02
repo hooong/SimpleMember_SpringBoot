@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple_member</title>
+</head>
+<body>
+<h1>Simple_Login</h1>
+<h3 sec:authorize="isAuthenticated()">반갑습니다. <span sec:authentication="name"></span>님!</h3>
+<hr>
+<a sec:authorize="isAnonymous()" th:href="@{/member/login}">로그인</a>
+<a sec:authorize="isAuthenticated()" th:href="@{/member/logout}">로그아웃</a>
+<a sec:authorize="isAnonymous()" th:href="@{/member/signup}">회원가입</a>
+</body>
+</html>
