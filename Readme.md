@@ -62,8 +62,6 @@
   				└── signupForm.html
   ```
 
-  - GitHub에서 코드 전체를 확인하실 수 있습니다. ([]())
-
   <br>
 
 <br>
